@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Blog Web</title>
+    </head>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color:grey;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            width: 100%;
+            background: #333;
+            color: #fff;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px 20px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            position: fixed;
+            top: 0;
+            left: 0;
+            z-index: 1000; 
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        
+        header .nav-buttons {
+            display: flex;
+            gap: 10px;
+            padding-right: 40px;
+        }
+
+        header .nav-buttons button {
+            background: #28a745;
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        header .nav-buttons button:hover {
+            background: #218838;
+        }
+    </style>
+<body>
+    <header>
+        <h1>Welcome Page</h1>
+        <div class="nav-buttons">
+            <button onclick="location.href='blog_post.php'">Blog Post</button>
+            <button onclick="location.href='edit_profile.html'">Edit Profile</button>
+            <button onclick="location.href='logout.php'">Logout</button>
+        </div>
+    </header>
